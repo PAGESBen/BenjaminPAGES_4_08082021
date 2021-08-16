@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    overflow-x: hidden;
+    /* overflow-x: hidden; supprimé pour voir la barre de défilement */ 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
+    /* width: 100%; */
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -317,7 +317,7 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    margin-right: 0;
     float: right;
     z-index: 1;
 }
@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.png");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {

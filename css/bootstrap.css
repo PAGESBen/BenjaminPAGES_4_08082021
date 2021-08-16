@@ -5256,7 +5256,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 @media (max-width:767px) {
     .navbar-nav .open .dropdown-menu {
-        position: static;
         float: none;
         width: auto;
         margin-top: 0;
@@ -5279,17 +5278,17 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 @media (min-width:768px) {
-    .navbar-nav {
+    /* .navbar-nav {
         float: left;
         margin: 0
     }
     .navbar-nav>li {
-        float: left
-    }
-    .navbar-nav>li>a {
+        float: left */
+    /* } */
+    /* .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 15px
-    }
+    } */
 }
 
 .navbar-form {
