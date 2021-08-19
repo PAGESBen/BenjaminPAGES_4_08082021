@@ -560,6 +560,33 @@ a[data-lightbox]:hover img {
     animation-fill-mode: none;
 }
 
+/*ajouté pour voir le focus en navigation au clavier*/
+a[data-lightbox]:focus img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+
+/*ajouté pour voir le focus en navigation au clavier*/
+a[data-lightbox]:focus::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+
 #lightbox-modal {
     display: flex;
     align-items: center;
@@ -1041,3 +1068,13 @@ h4 {
         text-align: center;
     }
 }
+
+
+/*ajouté pour que les focus soient plus visible lors de la navigation au clavier*/
+.btn:focus {
+    border: black 2px solid;
+}
+
+.border-focus:focus {
+    border-bottom : solid black 2px;
+}       
