@@ -88,11 +88,13 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -5;
 }
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    z-index: 0;
 }
 
 .b-parallax {
@@ -133,7 +135,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .d-bloc .a-btn:hover,
@@ -586,7 +588,6 @@ a[data-lightbox]:focus::before {
     -webkit-transform: translateY(-50%);
 }
 
-
 #lightbox-modal {
     display: flex;
     align-items: center;
@@ -781,7 +782,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 40px 40px 40px;
 }
 
@@ -799,21 +800,22 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #2F2F2F;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
+    z-index: 2 !important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #DF3E4D;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #E8737E!important;
+    color: black!important;
 }
 
 .ltc-white {
@@ -945,12 +947,14 @@ h4 {
         margin-left: 0;
         margin-right: 0;
     }
+
     .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
     }
+    
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1072,9 +1076,9 @@ h4 {
 
 /*ajouté pour que les focus soient plus visible lors de la navigation au clavier*/
 .btn:focus {
-    border: black 2px solid;
+    border: white 2px solid;
 }
 
 .border-focus:focus {
-    border-bottom : solid black 2px;
-}       
+    border-bottom : solid white 2px;
+}
